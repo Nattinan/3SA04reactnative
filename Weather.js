@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-export default class App extends React.Component {
+export default class Weather extends React.Component {
   doIt = () => {
     console.log("Hello from console")
   }
@@ -9,7 +9,7 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text onPress={this.doIt}>Hello World</Text>        
+        <Text>{this.props.zipCode}</Text>               
       </View>
     );
   }

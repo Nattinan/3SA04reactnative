@@ -2,13 +2,12 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
 export default class App extends React.Component {
-  doIt = () => {
-    console.log("Hello from console")
-  }
   render() {
     return (
       <View style={styles.container}>
-        <Text onPress={this.doIt}>Hello World</Text>        
+        <Text>Open up App.js to start working on your app!</Text>
+        <Text>Changes you make will automatically reload.</Text>
+        <Text>Shake your phone to open the developer menu.</Text>
       </View>
     );
   }
